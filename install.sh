@@ -40,20 +40,5 @@ mkdir -p ~/.config/rofi
 echo "copying rofi.rasi"
 cp ~/mangowm-simple/configs/rofi.rasi ~/.config/rofi/config.rasi
 
-read -r -p "install candy icons and create gtk theme from wallpaper.png? [y/N]: " choice
-
-case "$choice" in
-    y|Y)
-        echo "installing icons and creating gtk theme"
-        yay -S --needed candy-icons-git --noconfirm
-	wpg -a || echo "wpgtk already initialized or skipped"
-	wpg -s ~/Pictures/wallpaper.png
-	w
-        ;;
-    *)
-        echo "skipping candy icons and gtk theme"
-        ;;
-esac
-
 echo "you can manage your icons and gtk settings in lxappearance"
 echo "use sudo reboot to complete installation"
