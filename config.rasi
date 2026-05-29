@@ -1,0 +1,14 @@
+window {
+    border-radius: 18;
+    padding: 12;
+}
+
+element-icon {
+    size: 32;
+}
+
+listview {
+    lines: 8;
+    spacing: 4;
+    scrollbar: false;
+}
