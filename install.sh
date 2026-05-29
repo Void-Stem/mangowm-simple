@@ -22,15 +22,23 @@ sudo pacman -S --needed nano thunar rofi-wayland kitty lxappearance --noconfirm
 
 echo "creating ~/Pictures"
 mkdir -p ~/Pictures
-
 echo "copying wallpaper"
 cp ~/mangowm-simple/wallpaper.png ~/Pictures/wallpaper.png
 
 echo "creating ~/.config/mango"
 mkdir -p ~/.config/mango
+echo "copying mango config"
+cp ~/mangowm-simple/configs/mangowm.conf ~/.config/mango
 
-echo "copying configs"
-cp ~/mangowm-simple/config.conf ~/.config/mango
+echo "creating ~/.config/kitty"
+mkdir -p ~/.config/kitty
+echo "copying kitty.conf"
+cp ~/mangowm-simple/configs/kitty.conf ~/.config/kitty.conf
+
+echo "creating ~/.config/rofi"
+mkdir -p ~/.config/rofi
+echo "copying rofi.rasi"
+cp ~/mangowm-simple/configs/rofi.rasi ~/.config/config.rasi
 
 read -r -p "install candy icons and create gtk theme from wallpaper.png? [y/N]: " choice
 
@@ -48,4 +56,4 @@ case "$choice" in
 esac
 
 echo "you can manage your icons and gtk settings in lxappearance"
-
+echo "use sudo reboot to complete installation"
