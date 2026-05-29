@@ -6,4 +6,4 @@ how to install
 3. chmod +x install.sh
 4. ./install.sh
 
-you can manage your icons and gtk settings in lxappearance
+you can manage your icons and gtk settings in lxappearance/wpgtk
