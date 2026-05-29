@@ -18,7 +18,7 @@ yay -S mangowm-git --noconfirm
 
 echo "installing basic apps/tools"
 yay -S wpgtk --noconfirm
-sudo pacman -S --needed nano thunar rofi-wayland kitty lxappearance --noconfirm
+sudo pacman -S --needed nano thunar rofi-wayland kitty lxappearance swaybg  --noconfirm
 
 echo "creating ~/Pictures"
 mkdir -p ~/Pictures
