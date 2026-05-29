@@ -1,5 +1,7 @@
 mangowm-simple is an unofficial, pre-simple rice setup for MangoWM that works on Arch Linux and Arch-based systems
-#This is a early version new stuff coming soon also my first time using github.com
+
+This is a early version new stuff coming soon also my first time using github.com
+
 how to install
 1. first download git if you dont have it installed for arch "sudo pacman -S git"
 2. cd mangowm-simple
