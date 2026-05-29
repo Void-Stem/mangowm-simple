@@ -28,17 +28,17 @@ cp ~/mangowm-simple/wallpaper.png ~/Pictures/wallpaper.png
 echo "creating ~/.config/mango"
 mkdir -p ~/.config/mango
 echo "copying mango config"
-cp ~/mangowm-simple/configs/mangowm.conf ~/.config/mango
+cp ~/mangowm-simple/configs/mangowm.conf ~/.config/mango/config.conf
 
 echo "creating ~/.config/kitty"
 mkdir -p ~/.config/kitty
 echo "copying kitty.conf"
-cp ~/mangowm-simple/configs/kitty.conf ~/.config/kitty.conf
+cp ~/mangowm-simple/configs/kitty.conf ~/.config/kitty/kitty.conf
 
 echo "creating ~/.config/rofi"
 mkdir -p ~/.config/rofi
 echo "copying rofi.rasi"
-cp ~/mangowm-simple/configs/rofi.rasi ~/.config/config.rasi
+cp ~/mangowm-simple/configs/rofi.rasi ~/.config/rofi/config.rasi
 
 read -r -p "install candy icons and create gtk theme from wallpaper.png? [y/N]: " choice
 
@@ -48,7 +48,7 @@ case "$choice" in
         yay -S --needed candy-icons-git --noconfirm
 	wpg -a || echo "wpgtk already initialized or skipped"
 	wpg -s ~/Pictures/wallpaper.png
-	wpg -m
+	w
         ;;
     *)
         echo "skipping candy icons and gtk theme"
